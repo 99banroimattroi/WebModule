@@ -9,7 +9,7 @@ def about_me():
 @app.route('/school')
 
 def school_me():
-  return redirect("http://techkids.vn")
+  return redirect("http://techkids.vn", code =302) 
 
 if __name__ == '__main__':
   app.run(debug=True)

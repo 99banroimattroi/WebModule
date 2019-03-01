@@ -10,13 +10,13 @@ def calcbmi(weight,height):
     if  BMI < 16:
         return("BMI {:.1f} <16: severely underweight").format(BMI)
     elif BMI < 18.5:
-        return("16 <= BMI( "+ str(BMI) + " ) < 18.5 : Underweight")
+        return("16 <= BMI {:.1f}  < 18.5 : Underweight").format(BMI)
     elif BMI < 25:
-        return("18.5 <= BMI( "+ str(BMI) + " ) < 25 : Normal")
+        return("18.5 <= BMI {:.1f}  < 25 : Normal").format(BMI)
     elif BMI < 30:
-        return("25 <= BMI( "+ str(BMI) + " ) < 30 : Overweight")
+        return("25 <= BMI {:.1f}  < 30 : Overweight").format(BMI)
     else:
-        return("BMI( "+ str(BMI) + " ) > 30 : Obese")
+        return("BMI {:.1f}  > 30 : Obese").format(BMI)
 
 if __name__ == '__main__':
   app.run(debug=True)
