@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <title>Honda xe máy</title>
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://hondaxemay.com.vn/wp-content/themes/honda/favicon/android-icon-192x192.png">
 <body>
-    <h1>Hello {{ user }}</h1>
+    
+    <h1 style="
+            width: 1002px;
+            padding-left: 111;
+            margin-left: 440px;
+            color: brown
+            ">
+        Hello ! Welcome to the showroom{{ user }}</h1>
+    <h2 style="
+            width: 1002px;
+            padding-left: 111;
+            margin-left: 100px;
+            color: green
+            ">
+        LIST ALL BIKE
+    </h2>
     {% for item in item_list %}
         <h3>{{item}}</h3>
     {% endfor %}    
+    <div>
+        <img src="http://images2.fanpop.com/image/photos/14300000/PORSCHE-LOGO-porsche-14335379-1440-900.jpg">
+    </div>   
 </body>
 </html>

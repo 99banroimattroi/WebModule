@@ -12,7 +12,9 @@ items = [
 
 @app.route('/')
 def menu():
-    return render_template("menu_bike.html", item_list = items, user = "D.HUNG")
+  # k = f"<h4> Model: {items['model']} </h4>    <h4> Daily_fee: { items['daily_fee']} </h4>   <h4>Image:{items['image']} </h4>  <h4> Year:{items['year']} </h4>"
+  return render_template("menu_bike.html", item_list = items, user = "D.HUNG")
+  
 
 @app.route("/new_bike", methods = ['GET','POST'])
 def new_bike():
@@ -31,7 +33,8 @@ def new_bike():
           "year":y
         }
         items.append(new_item)
-        return "<h1>Đã thêm thành công !</h1>  " + "<h2>Chi tiết:</h2>" + str(items)  
+        s = f"<h4> Model: {new_item['model']} </h4>    <h4> Daily_fee: { new_item['daily_fee']} </h4>   <h4>Image:{new_item['image']} </h4>  <h4> Year:{new_item['year']} </h4>"
+        return "<h1>Đã thêm thành công !</h1>  " + "<h2>Chi tiết:</h2>" + s  
 
 if __name__ == '__main__':
   app.run(debug=True)
