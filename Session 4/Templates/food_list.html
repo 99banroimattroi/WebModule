@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    f_list
+    <h1>food list</h1>
+    {% for f in f_list %}
+        <h3>{{f.Name}}</h3>
+        <div>{{f.Price}}</div>
+        <a href="/food/{{  f._id}}">Detail</a>
+    {% endfor %}
+</body>
+</html>

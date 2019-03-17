@@ -35,7 +35,7 @@ def update_by_id(id, name, price):
 
 
 
-
+# def find_by_username(username):
 
 if __name__ == "__main__":
     query = {"_id": ObjectId("5c812a493b74ac2cecde0ef9")}
@@ -51,20 +51,12 @@ if __name__ == "__main__":
     #     print("Not found")
 
 
-
-
-
-
-
-
     # while True:
     #     name = input("Enter name: ")
     #     price = int(input("Enter price: "))
 
     #     add(name,price)
     
-
-
 
     # food_list = food_collection.find( #lazy loading
     #     {
@@ -73,18 +65,14 @@ if __name__ == "__main__":
     # )
 
 
-
-
     # first_food = food_list[0]
     # print(first_food["Name"])
     # print(first_food["Price"])
 
 
-
     # for food in food_list:
     #     print(food["Name"])
     #     print(food["Price"])
-
 
 
     # for food in food_list:
